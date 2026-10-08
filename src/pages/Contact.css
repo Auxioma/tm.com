@@ -1,0 +1,92 @@
+/* ---------- Hero ---------- */
+.ct-hero { height: 226px; }
+.ct-eyebrow { position: absolute; left: 63px; top: 30px; font-size: 12.4px; letter-spacing: 1px; }
+.ct-title { position: absolute; left: 62px; top: 50px; font-size: 39.5px; line-height: 42px; }
+.ct-text { position: absolute; left: 63px; top: 142px; font-size: 14.8px; line-height: 19px; }
+.ct-hand { left: 877px; top: 90px; transform: rotate(-14deg); font-size: 18.6px; line-height: 24px; font-weight: 400; }
+
+/* ---------- 4 blocs ---------- */
+.ct-blocs-wrap { background: #fff; padding: 20px 0 12px; }
+.ct-blocs { display: grid; grid-template-columns: repeat(4, 220px); column-gap: 25px; padding-left: 35px; }
+.ct-bloc { position: relative; height: 176px; text-align: center; }
+.ct-bloc + .ct-bloc::before { content: ''; position: absolute; left: -13px; top: 10px; bottom: 30px; width: 1px; background: #e9eef6; }
+.ct-bloc .icon-circle { width: 51px; height: 51px; font-size: 22px; }
+.ct-bloc h3 { margin-top: 5px; font-family: var(--font-title); font-weight: 800; font-size: 15.2px; color: #0b1a4a; }
+.ct-bloc p { margin-top: 1px; font-size: 12.4px; line-height: 16.5px; color: #3a4150; }
+.ct-bloc-btn {
+  position: absolute; left: 0; right: 0; top: 142px; height: 36px;
+  color: #fff; font-family: var(--font-body); font-weight: 600; font-size: 12.4px; gap: 14px;
+}
+.ct-bloc:nth-child(1) .ct-bloc-btn { font-size: 13.6px; gap: 16px; }
+.ct-bloc-btn svg { font-size: 15px; }
+.ct-bloc-btn.light { background: #eef4fd; color: #1a6cf0; }
+
+/* ---------- Formulaire ---------- */
+.ct-form-sec { background: #fff; padding-top: 2px; }
+.ct-form-inner { position: relative; height: 446px; }
+.ct-form-col { position: absolute; left: 45px; top: 19px; width: 570px; }
+.ct-h2 { margin-top: 5px; font-size: 25.4px; }
+.ct-sub { margin-top: 5px; font-size: 11.8px; line-height: 15.5px; color: #3a4150; }
+.ct-form { margin-top: 21px; display: grid; grid-template-columns: 276px 272px; column-gap: 20px; }
+.ct-form .field { height: 56px; }
+.ct-form .field label { font-size: 10.6px; font-weight: 700; margin-bottom: 7px; }
+.ct-form .input { height: 25px; font-size: 10.2px; border-color: #eceff4; }
+.ct-full { grid-column: 1 / -1; }
+.ct-msg { height: 96px !important; }
+.ct-msg textarea { height: 66px !important; padding-top: 8px; resize: vertical; }
+.ct-file {
+  height: 51px; display: flex; align-items: center; cursor: pointer;
+  border: 1px solid #cfe0f7; border-radius: 6px; background: #f5f9ff; font-size: 8.8px; color: #3a4150; line-height: 14px;
+  margin-right: -15px; width: 338px;
+}
+.ct-file b { font-weight: 600; color: #0b1a4a; font-size: 10.6px; }
+.ct-file-ico { font-size: 21px; color: #1a6cf0; margin: 0 16px 0 17px; transform: rotate(-45deg) scaleX(-1); }
+.ct-send { justify-self: end; width: 214px; height: 51px; border-radius: 6px; font-family: var(--font-body); font-weight: 700; font-size: 13.6px; gap: 20px; }
+.ct-send svg { font-size: 19px; }
+
+.ct-equipe { position: absolute; left: 642px; top: 16px; width: 351px; }
+.ct-equipe-photo { position: relative; height: 157px; border-radius: 7px; overflow: hidden; }
+.ct-equipe-photo img { width: 100%; height: 100%; object-fit: cover; }
+.ct-hand2 { left: 232px; top: 26px; transform: rotate(-17deg); font-size: 17.5px; line-height: 23px; font-weight: 400; }
+.ct-equipe h3 { margin-top: 8px; margin-left: 6px; font-family: var(--font-title); font-weight: 800; font-size: 16.4px; color: #0b1a4a; }
+.ct-equipe-p { margin-left: 6px; margin-top: 3px; font-size: 11.6px; line-height: 15.5px; color: #3a4150; white-space: nowrap; }
+.ct-equipe ul { margin-top: 10px; margin-left: 6px; }
+.ct-equipe li { display: flex; align-items: flex-start; height: 45px; font-size: 11px; line-height: 17px; color: #3a4150; }
+.ct-equipe li b { font-family: var(--font-title); font-weight: 800; font-size: 11.6px; color: #0b1a4a; }
+.ct-equipe li .icon-circle { width: 34px; height: 34px; background: #1a6cf0; font-size: 15px; margin-right: 19px; margin-top: 1px; }
+
+/* ---------- FAQ + Carte ---------- */
+.ct-faqmap { background: #fff; }
+.ct-faqmap-inner { position: relative; height: 311px; }
+.ct-faq-col { position: absolute; left: 45px; top: 6px; width: 418px; }
+.ct-faq { margin-top: 11px; }
+.ct-faq .faq-item { border: 0; border-radius: 0; }
+.ct-faq .faq-q { height: 29.4px; padding: 0 12px 0 9px; font-size: 11.4px; font-weight: 500; color: #2d3444; }
+.ct-faq .faq-q .plus { color: #1a2b6d; }
+.ct-all { margin-top: 13px; height: 32px; display: flex; align-items: center; justify-content: center; gap: 12px; border: 1px solid #e3e9f3; border-radius: 16px; font-size: 11.6px; font-weight: 600; color: #1a6cf0; }
+.ct-map-col { position: absolute; left: 510px; top: 6px; width: 480px; }
+.ct-map { margin-top: 7px; margin-left: -8px; width: 488px; height: 204px; border-radius: 8px; object-fit: cover; }
+
+/* ---------- CTA ---------- */
+.ct-cta-wrap { background: #fff; padding: 0 0 0; }
+.ct-cta { position: relative; margin: 0 13px; height: 110px; border-radius: 8px 8px 0 0; background-size: cover; color: #fff; overflow: hidden; }
+.ct-cta h2 { position: absolute; left: 61px; top: 6px; font-family: var(--font-title); font-weight: 800; font-size: 22.6px; line-height: 26px; }
+.ct-cta h2 em { font-style: normal; color: #5fb2f5; }
+.ct-cta p { position: absolute; left: 61px; top: 62px; font-size: 14px; line-height: 18px; }
+.ct-cta-btn { position: absolute; left: 706px; top: 38px; width: 264px; height: 43px; border: 2px solid #fff; font-family: var(--font-body); font-weight: 600; font-size: 12.4px; gap: 16px; }
+.ct-cta-btn svg:first-child { font-size: 17px; }
+
+@media (max-width: 759px) {
+  .ct-hero { height: auto; padding: 24px 0; }
+  .ct-hero > .container > * { position: static !important; margin-top: 10px; }
+  .ct-blocs { padding: 0 16px; }
+  .ct-bloc { height: 200px; }
+  .ct-form-inner, .ct-faqmap-inner { height: auto; }
+  .ct-form-col, .ct-equipe, .ct-faq-col, .ct-map-col { position: relative; left: 0; top: 0; width: 100%; }
+  .ct-form { display: flex; flex-direction: column; }
+  .ct-file { width: 100%; margin: 0; }
+  .ct-equipe-p { white-space: normal; }
+  .ct-map { width: 100%; margin: 0; }
+  .ct-cta { height: auto; padding: 20px; margin: 0; }
+  .ct-cta > * { position: static !important; margin-top: 8px; }
+}

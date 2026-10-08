@@ -1,0 +1,96 @@
+/* ---------- Hero ---------- */
+.ap-hero { height: 272px; }
+.ap-eyebrow { position: absolute; left: 63px; top: 33px; font-size: 12.4px; letter-spacing: 0.3px; }
+.ap-title { position: absolute; left: 62px; top: 52px; font-size: 43.5px; line-height: 42px; }
+.ap-text { position: absolute; left: 63px; top: 142px; font-size: 15.6px; line-height: 19px; }
+.ap-video-btn {
+  position: absolute; left: 63px; top: 212px; width: 264px; height: 41px;
+  border: 2px solid #fff; font-family: var(--font-body); font-weight: 700; font-size: 11.8px; gap: 20px;
+  padding-right: 16px;
+}
+.ap-video-btn svg { font-size: 14px; }
+.ap-hand { left: 866px; top: 110px; transform: rotate(-15deg); font-size: 19px; line-height: 29px; font-weight: 400; }
+
+/* ---------- Mission ---------- */
+.ap-mission-wrap { background: #fff; padding-top: 12px; }
+.ap-mission {
+  position: relative;
+  margin: 0 18px 0 21px;
+  height: 182px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #eef5fe 0%, #f5f9ff 45%, #f1f6fe 100%);
+  display: flex;
+}
+.ap-mission-txt { padding: 14px 0 0 37px; width: 452px; }
+.ap-mission-txt .h2 { margin-top: 5px; font-size: 26.4px; line-height: 30px; }
+.ap-p { font-size: 12.8px; line-height: 16.6px; color: #333b4a; }
+.ap-mission-txt .ap-p { margin-top: 8px; }
+.ap-mission-vals {
+  position: absolute; left: 452px; top: 17px; width: 521px; height: 148px;
+  background: rgba(255, 255, 255, .7);
+  border-radius: 8px;
+  display: flex;
+  box-shadow: 0 1px 6px rgba(30,60,120,.05);
+}
+.ap-mv { flex: none; text-align: center; padding-top: 10px; position: relative; }
+.ap-mv:nth-child(1) { width: 125px; }
+.ap-mv:nth-child(2) { width: 133px; }
+.ap-mv:nth-child(3) { width: 133px; }
+.ap-mv:nth-child(4) { width: 130px; }
+.ap-mv + .ap-mv::before { content: ''; position: absolute; left: 0; top: 18px; bottom: 16px; width: 1px; background: #e4ebf5; }
+.ap-mv .icon-circle { width: 50px; height: 50px; font-size: 22px; }
+.ap-mv h3 { margin-top: 6px; font-family: var(--font-title); font-weight: 800; font-size: 12.2px; line-height: 17px; color: #0b1a4a; }
+.ap-mv p { font-size: 10.8px; line-height: 14.6px; color: #3a4150; }
+
+/* ---------- Histoire ---------- */
+.ap-histoire { position: relative; height: 273px; }
+.ap-histoire-txt { padding: 20px 0 0 53px; }
+.ap-histoire-txt .h2 { margin-top: 5px; font-size: 28.5px; }
+.ap-histoire-txt .ap-p { margin-top: 9px; font-size: 12.6px; line-height: 16.2px; }
+.ap-histoire-txt .ap-p:first-of-type { margin-top: 8px; }
+.ap-histoire-img { position: absolute; left: 476px; top: 19px; width: 529px; height: 243px; border-radius: 9px; overflow: hidden; }
+.ap-histoire-img img { width: 100%; height: 100%; object-fit: cover; }
+.ap-hand2 { left: 362px; top: 78px; transform: rotate(-16deg); font-size: 19.5px; line-height: 27px; }
+
+/* ---------- Chiffres ---------- */
+.ap-chiffres { background: #eef5fd; height: 152px; padding-top: 11px; }
+.ap-h2s { margin-top: 7px; font-size: 22.6px; }
+.ap-ch-grid { display: flex; gap: 9px; margin: 13px 0 0 26px; }
+.ap-ch { width: 237px; height: 76px; display: flex; align-items: center; border-radius: 7px; }
+.ap-ch-ico { width: 74px; flex: none; display: flex; justify-content: center; }
+.ap-ch:nth-child(1) .ap-ch-ico { width: 94px; }
+.ap-ch:nth-child(3) .ap-ch-ico { width: 84px; }
+.ap-ch-big { font-size: 44px; }
+.ap-ch-circle { width: 52px; height: 52px; font-size: 24px; }
+.ap-ch h4 { font-family: var(--font-title); font-weight: 800; font-size: 12.2px; line-height: 15.5px; color: #0b1a4a; }
+.ap-ch p { margin-top: 3px; font-size: 10.5px; line-height: 13.5px; color: #4a515e; }
+.ap-ch:nth-child(4) .ap-ch-ico { width: 88px; }
+
+/* ---------- Valeurs ---------- */
+.ap-valeurs { background: #fff; padding-top: 12px; padding-bottom: 6px; }
+.ap-val-grid { display: grid; grid-template-columns: repeat(4, 241px); column-gap: 5.5px; margin: 11px 0 0 25px; }
+.ap-val { position: relative; height: 177px; border-radius: 7px; }
+.ap-val-ico { position: absolute; left: 15px; top: 13px; font-size: 46px; }
+.ap-val h4 { position: absolute; left: 86px; top: 15px; font-family: var(--font-title); font-weight: 800; font-size: 12.6px; color: #0b1a4a; }
+.ap-val p { position: absolute; left: 86px; top: 34px; font-size: 10.9px; line-height: 13.8px; color: #3a4150; white-space: nowrap; }
+.ap-val img { position: absolute; left: 6px; right: 3px; bottom: 1px; width: calc(100% - 9px); height: 91px; object-fit: cover; border-radius: 4px; }
+
+.ap-cta {
+  position: relative; margin: 10px 18px 0 19px; height: 139px; border-radius: 9px;
+  background-size: cover; background-position: center; color: #fff; overflow: hidden;
+}
+.ap-cta h2 { position: absolute; left: 42px; top: 15px; font-family: var(--font-title); font-weight: 800; font-size: 25.5px; line-height: 28px; letter-spacing: -0.3px; }
+.ap-cta p { position: absolute; left: 42px; top: 76px; font-size: 13px; line-height: 16px; }
+.ap-cta-btn { position: absolute; left: 703px; top: 50px; width: 251px; height: 41px; color: var(--tm-blue); font-family: var(--font-body); font-weight: 700; font-size: 13.6px; gap: 26px; }
+
+@media (max-width: 759px) {
+  .ap-hero { height: auto; padding: 24px 0; }
+  .ap-hero > .container > * { position: static !important; margin-top: 10px; }
+  .ap-mission, .ap-histoire, .ap-chiffres, .ap-cta { height: auto; margin: 12px 0; }
+  .ap-mission-vals, .ap-histoire-img { position: static; width: 100%; height: auto; }
+  .ap-mission-txt, .ap-histoire-txt { padding: 16px; width: auto; }
+  .ap-ch-grid, .ap-val-grid { margin: 12px 0; }
+  .ap-ch { width: 100%; }
+  .ap-cta { padding: 20px; }
+  .ap-cta > * { position: static !important; margin-top: 8px; }
+}

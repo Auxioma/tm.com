@@ -1,0 +1,116 @@
+/* ---------- Hero ---------- */
+.rc-hero { height: 287px; }
+.rc-eyebrow { position: absolute; left: 63px; top: 31px; font-size: 12.5px; letter-spacing: 1.4px; }
+.rc-title { position: absolute; left: 62px; top: 51px; font-size: 44px; line-height: 43px; }
+.rc-text { position: absolute; left: 63px; top: 143px; font-size: 15px; line-height: 19px; }
+.rc-b1, .rc-b2 { position: absolute; top: 227px; height: 41px; font-family: var(--font-body); font-weight: 700; font-size: 11.2px; gap: 18px; }
+.rc-b1 { left: 62px; width: 241px; color: #0b1a4a; }
+.rc-b1 svg { font-size: 13px; color: #0e2a66; }
+.rc-b2 { left: 317px; width: 215px; border: 2px solid #fff; gap: 16px; font-size: 11.8px; }
+.rc-hand { left: 888px; top: 70px; transform: rotate(-15deg); font-size: 18px; line-height: 23px; font-weight: 400; }
+
+/* ---------- Avantages ---------- */
+.rc-adv-wrap { background: #f6f9fe; padding: 17px 0 5px; }
+.rc-adv { display: grid; grid-template-columns: 242px 242px 238px 241px; column-gap: 7px; padding-left: 21px; }
+.rc-adv-card { height: 122px; text-align: center; padding-top: 7px; border-radius: 7px; }
+.rc-adv-ico { font-size: 39px; height: 42px; }
+.rc-adv-card h3 { margin-top: 8px; font-family: var(--font-title); font-weight: 800; font-size: 13.8px; color: #0b1a4a; }
+.rc-adv-card p { margin-top: 2px; font-size: 12px; line-height: 16px; color: #3a4150; }
+
+/* ---------- Métiers ---------- */
+.rc-metiers { background: #fff; padding: 17px 0 12px; }
+.rc-h2 { margin-top: 7px; font-size: 25.4px; }
+.rc-lead { margin-top: 5px; font-size: 12.3px; }
+.rc-grid { display: grid; grid-template-columns: 187px 187px 190px 187px 186px; column-gap: 12px; row-gap: 10px; margin: 8px 0 0 20px; }
+.rc-mcard { position: relative; height: 126px; overflow: hidden; border-radius: 6px; text-align: center; }
+.rc-mimg { position: relative; height: 96px; }
+.rc-mimg img { width: 100%; height: 100%; object-fit: cover; }
+.rc-play { left: 77px; top: 47px; }
+.rc-micon { position: absolute; left: 9px; top: 74px; width: 43px; height: 43px; font-size: 18px; border: 2px solid #fff; }
+.rc-mcard h3 { margin-top: 6px; font-family: var(--font-title); font-weight: 800; font-size: 12.4px; color: #0b1a4a; }
+
+/* ---------- Pourquoi ---------- */
+.rc-pourquoi { background: #eef5fd; height: 137px; padding-top: 9px; }
+.rc-h2b { margin-top: 6px; font-size: 23.2px; }
+.rc-pq { display: flex; gap: 9px; margin: 9px 0 0 23px; }
+.rc-pq-card { width: 238px; height: 70px; display: flex; align-items: center; border-radius: 6px; }
+.rc-pq-card:nth-child(2) { width: 236px; }
+.rc-pq-ico { width: 48px; font-size: 40px; margin: 0 20px 0 18px; flex: none; }
+.rc-pq-card:nth-child(4) .rc-pq-ico { margin: 0 12px 0 10px; }
+.rc-pq-card h4 { font-family: var(--font-title); font-weight: 800; font-size: 12.2px; color: #0b1a4a; white-space: nowrap; }
+.rc-pq-card p { margin-top: 3px; font-size: 10.6px; line-height: 14px; color: #3a4150; white-space: nowrap; }
+
+/* ---------- Processus ---------- */
+.rc-process { background: #fff; padding: 5px 0 9px; }
+.rc-steps { position: relative; height: 120px; }
+.rc-line { position: absolute; left: 70px; right: 170px; top: 31px; height: 1px; background: #9fbbe4; }
+.rc-line-arrow { position: absolute; top: 25px; font-size: 13px; color: #2e6fd8; }
+.rc-step { position: absolute; top: 0; width: 220px; text-align: center; }
+.rc-step-1 { left: 42px; }
+.rc-step-2 { left: 304px; }
+.rc-step-3 { left: 551px; }
+.rc-step-4 { left: 816px; width: 200px; }
+.rc-num {
+  position: absolute; top: 17px; width: 30px; height: 30px; border-radius: 50%;
+  background: var(--tm-blue); color: #fff; display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-title); font-weight: 800; font-size: 13px; box-shadow: 0 0 0 5px #fff;
+}
+.rc-step-1 .rc-num { left: -2px; }
+.rc-step-2 .rc-num { left: 4px; }
+.rc-step-3 .rc-num { left: 5px; }
+.rc-step-4 .rc-num { left: 1px; }
+.rc-step-ico { position: relative; display: block; margin: 9px auto 0; height: 34px; font-size: 34px; color: var(--tm-blue); background: #fff; padding: 0 8px; box-sizing: content-box; }
+.rc-step-1 .rc-step-ico { transform: translateX(-2px); }
+.rc-step-2 .rc-step-ico { transform: translateX(-5px); }
+.rc-step-3 .rc-step-ico { transform: translateX(-1px); width: 48px; }
+.rc-step-4 .rc-step-ico { transform: translateX(-6px); }
+.rc-step h4 { margin-top: 8px; font-family: var(--font-title); font-weight: 800; font-size: 13.6px; color: #0b1a4a; }
+.rc-step-3 h4 { margin-top: 11px; }
+.rc-step p { margin-top: 2px; font-size: 11.8px; line-height: 15px; color: #3a4150; }
+.rc-step-1 h4, .rc-step-1 p { transform: translateX(-2px); }
+.rc-step-2 h4, .rc-step-2 p { transform: translateX(-3px); }
+.rc-step-4 h4, .rc-step-4 p { transform: translateX(-6px); }
+
+/* ---------- Formulaire candidature ---------- */
+.rc-form-block { position: relative; margin: 0 20px 0 21px; height: 217px; border-radius: 8px; overflow: hidden; }
+.rc-form-photo { position: absolute; left: 0; top: 0; width: 311px; height: 217px; }
+.rc-form-photo img { width: 100%; height: 100%; object-fit: cover; }
+.rc-hand2 { left: 194px; top: 30px; transform: rotate(-20deg); font-size: 16px; line-height: 20px; font-weight: 400; }
+.rc-form-intro { position: absolute; left: 327px; top: 22px; }
+.rc-form-intro h2 { font-family: var(--font-title); font-weight: 800; font-size: 20.6px; line-height: 24px; color: #0b1a4a; }
+.rc-form-intro p { margin-top: 5px; font-size: 9.8px; line-height: 14px; color: #3a4150; }
+.rc-form-intro ul { margin-top: 18px; }
+.rc-form-intro li { display: flex; align-items: center; height: 29px; font-size: 9.6px; font-weight: 500; color: #0b1a4a; }
+.rc-form-intro li span {
+  width: 20px; height: 20px; border-radius: 50%; background: #e6effd; display: flex; align-items: center; justify-content: center;
+  color: var(--tm-blue); font-size: 9px; margin: 0 12px 0 11px;
+}
+.rc-form { position: absolute; left: 528px; top: 11px; width: 443px; display: grid; grid-template-columns: 122px 150px 146px; column-gap: 12px; row-gap: 0; }
+.rc-form .field label { font-size: 8px; font-weight: 700; margin-bottom: 3px; }
+.rc-form .field { height: 45px; }
+.rc-form .input { height: 23px; font-size: 7.6px; border-radius: 4px; }
+.rc-fmsg { grid-column: 1 / -1; height: 52px !important; }
+.rc-fmsg textarea { height: 36px !important; padding-top: 7px; resize: none; }
+.rc-upload {
+  position: absolute; left: 0; top: 150px; width: 226px; height: 49px;
+  border: 1px dashed #9dbdea; border-radius: 5px; background: #f7faff;
+  display: flex; align-items: center; cursor: pointer; font-size: 7.6px; color: #3a4150; line-height: 12px;
+}
+.rc-upload b { font-weight: 600; color: #0b1a4a; font-size: 8px; }
+.rc-upload-ico { font-size: 22px; color: var(--tm-blue); margin: 0 14px 0 50px; }
+.rc-submit {
+  position: absolute; left: 238px; top: 150px; width: 205px; height: 49px; border-radius: 5px;
+  background: var(--tm-blue); color: #fff; font-family: var(--font-body); font-weight: 700; font-size: 11.8px; gap: 14px;
+}
+.rc-submit svg { font-size: 17px; }
+
+@media (max-width: 759px) {
+  .rc-hero { height: auto; padding: 24px 0; }
+  .rc-hero > .container > * { position: static !important; margin-top: 10px; }
+  .rc-adv, .rc-grid, .rc-pq { padding: 0; margin: 12px 0; }
+  .rc-pourquoi, .rc-steps, .rc-form-block { height: auto; }
+  .rc-pq-card { width: 100%; }
+  .rc-step, .rc-form-photo, .rc-form-intro, .rc-form, .rc-upload, .rc-submit { position: relative; left: 0; top: 0; width: 100%; }
+  .rc-form-block { margin: 12px 0; padding-bottom: 12px; }
+  .rc-form { display: flex; flex-direction: column; padding: 0 12px; }
+}

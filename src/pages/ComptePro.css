@@ -1,0 +1,118 @@
+/* ---------- Hero ---------- */
+.cp-hero { height: 312px; }
+.cp-eyebrow { position: absolute; left: 62px; top: 22px; font-size: 12px; letter-spacing: 1.2px; }
+.cp-title { position: absolute; left: 61px; top: 40px; font-size: 39.5px; line-height: 38px; }
+.cp-text { position: absolute; left: 62px; top: 164px; font-size: 14.2px; line-height: 18.2px; }
+.cp-btn {
+  position: absolute; left: 62px; top: 231px; width: 333px; height: 47px; border: 2px solid #fff;
+  font-family: var(--font-body); font-weight: 700; font-size: 13.2px; gap: 18px;
+}
+.cp-btn svg:first-child { font-size: 19px; }
+.cp-small { position: absolute; left: 62px; top: 287px; font-size: 10.2px; color: #fff; }
+.cp-benefits {
+  position: absolute; left: 748px; top: 157px; width: 253px; height: 124px; border-radius: 7px;
+  background: rgba(255, 255, 255, .95); padding: 12px 0 0 18px;
+}
+.cp-benefits li { display: flex; align-items: center; height: 24.5px; font-size: 10.6px; color: #0b1a4a; white-space: nowrap; }
+.cp-benefits .icon-circle { width: 17px; height: 17px; background: #3fae2a; font-size: 9px; margin-right: 13px; }
+.cp-hand { left: 843px; top: 18px; transform: rotate(-12deg); font-size: 18.4px; line-height: 24px; font-weight: 400; }
+
+/* ---------- Avantages ---------- */
+.cp-adv { background: #f5f8fd; padding: 11px 0 10px; }
+.cp-adv-grid { display: grid; grid-template-columns: repeat(6, 155px); column-gap: 5.4px; padding-left: 26px; }
+.cp-adv-card { height: 111px; text-align: center; padding-top: 17px; border-radius: 6px; }
+.cp-adv-ico { font-size: 36px; height: 38px; }
+.cp-adv-circle { width: 42px; height: 42px; font-size: 19px; margin-top: -2px; margin-bottom: -2px; }
+.cp-adv-card h3 { margin-top: 12px; font-family: var(--font-title); font-weight: 800; font-size: 11.8px; color: #0b1a4a; }
+.cp-adv-card p { margin-top: 2px; font-size: 11.2px; color: #2d3444; }
+
+/* ---------- Étapes ---------- */
+.cp-steps-sec { background: #fff; padding: 13px 0 6px; }
+.cp-h2 { margin-top: 5px; font-size: 26px; }
+.cp-lead { margin-top: 8px; font-size: 11.8px; }
+.cp-steps { position: relative; height: 130px; margin-top: 10px; }
+.cp-line { position: absolute; left: 60px; right: 150px; top: 17px; height: 1px; background: #9fbbe4; }
+.cp-line-arrow { position: absolute; top: 11px; font-size: 13px; color: #2e6fd8; }
+.cp-step { position: absolute; top: 0; width: 240px; text-align: center; }
+.cp-step-1 { left: 42px; }
+.cp-step-2 { left: 292px; }
+.cp-step-3 { left: 540px; }
+.cp-step-4 { left: 786px; width: 232px; }
+.cp-num {
+  position: absolute; top: 2px; width: 30px; height: 30px; border-radius: 50%;
+  background: var(--tm-blue); color: #fff; display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-title); font-weight: 800; font-size: 13px; box-shadow: 0 0 0 5px #fff;
+}
+.cp-step-1 .cp-num { left: 0; }
+.cp-step-2 .cp-num { left: 3px; }
+.cp-step-3 .cp-num { left: 1px; }
+.cp-step-4 .cp-num { left: 0; }
+.cp-step-ico { position: relative; display: block; margin: 0 auto; height: 36px; font-size: 36px; color: var(--tm-blue); background: #fff; padding: 0 8px; box-sizing: content-box; }
+.cp-step-4 .cp-step-ico { transform: translateX(6px); }
+.cp-step h4 { margin-top: 12px; font-family: var(--font-title); font-weight: 800; font-size: 12.4px; line-height: 16px; color: #0b1a4a; }
+.cp-step p { margin-top: 3px; font-size: 11.2px; line-height: 16.5px; color: #3a4150; }
+.cp-step-4 h4, .cp-step-4 p { transform: translateX(6px); }
+
+/* ---------- Profil ---------- */
+.cp-profil { background: #fff; padding: 0; }
+.cp-profil-inner { position: relative; height: 288px; }
+.cp-laptop { position: absolute; left: 22px; top: 0; width: 488px; height: 290px; border-radius: 7px; object-fit: cover; }
+.cp-profil-txt { position: absolute; left: 537px; top: 12px; }
+.cp-profil-txt .eyebrow { font-size: 11.4px; letter-spacing: 0.9px; }
+.cp-profil-txt .h2 { margin-top: 6px; font-size: 21.8px; }
+.cp-p { margin-top: 8px; font-size: 11.6px; line-height: 16.2px; color: #333b4a; white-space: nowrap; }
+.cp-feats { margin-top: 11px; display: grid; grid-template-columns: 230px 220px; row-gap: 19px; }
+.cp-feat { display: flex; align-items: center; }
+.cp-feat .icon-circle { width: 38px; height: 38px; font-size: 16px; margin-right: 16px; }
+.cp-feat h4 { font-family: var(--font-title); font-weight: 800; font-size: 11.2px; color: #0b1a4a; white-space: nowrap; }
+.cp-feat p { margin-top: 4px; font-size: 10.8px; color: #3a4150; }
+
+/* ---------- Témoignage + FAQ ---------- */
+.cp-trust { background: #fff; }
+.cp-trust-inner { position: relative; height: 234px; }
+.cp-testi { position: absolute; left: 0; top: 0; width: 520px; height: 100%; }
+.cp-testi .h2 { position: absolute; left: 56px; top: 26px; font-size: 18.8px; }
+.cp-arrow { position: absolute; top: 118px; color: #1a6cf0; font-size: 14px; }
+.cp-prev { left: 37px; }
+.cp-next { left: 500px; }
+.cp-avatar { position: absolute; left: 72px; top: 81px; width: 86px; height: 85px; border-radius: 50%; object-fit: cover; }
+.cp-quote {
+  position: absolute; left: 172px; top: 72px; width: 316px; height: 118px; border-radius: 8px; background: #f2f7fe;
+  padding: 11px 0 0 15px; font-size: 11.4px; line-height: 16.5px; color: #2d3444;
+}
+.cp-quote b { display: block; margin-top: 8px; font-family: var(--font-title); font-weight: 800; font-size: 11.8px; color: #0b1a4a; }
+.cp-quote span { display: block; margin-top: 1px; font-size: 10.6px; color: #3a4150; }
+.cp-quote .cp-stars { position: absolute; left: 175px; top: 91px; color: #f7b21a; font-size: 12.6px !important; display: flex !important; gap: 2.5px; }
+.cp-dots { position: absolute; left: 228px; top: 200px; display: flex; gap: 7px; }
+.cp-dots span { width: 7px; height: 7px; border-radius: 50%; background: #d8e3f3; cursor: pointer; }
+.cp-dots span.on { background: #1a6cf0; }
+.cp-faq-col { position: absolute; left: 555px; top: 20px; width: 422px; }
+.cp-faq-col .eyebrow { font-size: 11.4px; letter-spacing: 0.9px; }
+.cp-faq-col .h2 { margin-top: 5px; font-size: 21px; }
+.cp-faq { margin-top: 6px; display: flex; flex-direction: column; gap: 5px; }
+.cp-faq .faq-item { border: 1px solid #edf1f7; border-radius: 5px; box-shadow: 0 1px 3px rgba(30,60,120,.04); }
+.cp-faq .faq-q { height: 24px; padding: 0 0 0 11px; font-size: 11.2px; font-weight: 500; }
+.cp-faq .faq-q .plus { width: 18px; text-align: left; }
+.cp-faq .faq-a { padding: 0 15px 8px; font-size: 10.4px; }
+
+/* ---------- CTA ---------- */
+.cp-cta-wrap { background: #fff; padding: 1px 0 10px; }
+.cp-cta { position: relative; margin: 0 9px 0 8px; height: 115px; border-radius: 7px; background-size: cover; color: #fff; overflow: hidden; }
+.cp-cta h2 { position: absolute; left: 45px; top: 9px; font-family: var(--font-title); font-weight: 800; font-size: 18.8px; line-height: 21px; letter-spacing: -0.2px; }
+.cp-cta h2 em { font-style: normal; color: #5fb2f5; }
+.cp-cta p { position: absolute; left: 45px; top: 78px; font-size: 11.4px; line-height: 14px; }
+.cp-cta-btn { position: absolute; left: 689px; top: 23px; width: 297px; height: 44px; border: 2px solid #fff; font-family: var(--font-body); font-weight: 700; font-size: 12px; gap: 16px; }
+.cp-cta-btn svg:first-child { font-size: 17px; }
+.cp-cta small { position: absolute; left: 715px; top: 82px; font-size: 10.6px; }
+
+@media (max-width: 759px) {
+  .cp-hero { height: auto; padding: 24px 0; }
+  .cp-hero > .container > * { position: static !important; margin-top: 10px; }
+  .cp-adv-grid { padding: 0 16px; }
+  .cp-steps, .cp-profil-inner, .cp-trust-inner { height: auto; }
+  .cp-step, .cp-laptop, .cp-profil-txt, .cp-testi, .cp-faq-col { position: relative; left: 0; top: 0; width: 100%; }
+  .cp-testi { height: 260px; }
+  .cp-p { white-space: normal; }
+  .cp-cta { height: auto; padding: 20px; margin: 0; }
+  .cp-cta > * { position: static !important; margin-top: 8px; }
+}

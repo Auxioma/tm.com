@@ -1,0 +1,65 @@
+ASSETS=[
+ ('domaines','domaines-hero',(0,44,1024,304),dict(clean=[(58,78,590,232,'wb'),(845,150,995,270,'w',2)])),
+]
+ASSETS+=[
+]
+_cols=[(20,208),(219,407),(419,607),(619,807),(818,1005)]
+_rows=[(412,533),(657,779),(894,1006)]
+_names=['artisan','prestataire','plaisirs','immobilier','commercants','produits-locaux','medical','justice','b2b','automobile','collectionneurs','agriculture','artistique','rencontres','marches']
+for _i,_n in enumerate(_names):
+    _x=_cols[_i%5]; _y=_rows[_i//5]
+    ASSETS.append(('domaines','dom-'+_n,(_x[0],_y[0],_x[1],_y[1])))
+ASSETS+=[
+ ('domaines','domaines-cta',(20,1233,1005,1352),dict(clean=[(50,1255,390,1330,'w',3)])),
+]
+ASSETS+=[
+ ('comment','comment-hero',(0,44,1024,284),dict(fill=[(0,43,1024,46)],clean=[(58,80,575,200,'wb'),(110,220,520,258,'w',2),(850,125,1015,240,'w',2)])),
+ ('comment','step-p1',(30,488,251,607)),('comment','step-p2',(284,488,492,607)),('comment','step-p3',(531,488,748,607)),('comment','step-p4',(779,488,997,607)),
+ ('comment','step-r1',(35,833,250,978)),('comment','step-r2',(284,848,497,973)),('comment','step-r3',(535,848,747,978)),('comment','step-r4',(783,846,996,980)),
+ ('comment','comment-video',(23,1009,513,1220),dict(fill=[(240,1102,299,1161),(30,1180,505,1215)])),
+ ('comment','comment-cta',(0,1230,1024,1330),dict(clean=[(66,1240,380,1320,'w',3)])),
+]
+ASSETS+=[
+ ('apropos','apropos-hero',(0,44,1024,316),dict(fill=[(0,43,1024,46)],clean=[(58,72,545,245,'wb'),(870,120,1010,275,'w',2)])),
+ ('apropos','apropos-histoire',(476,529,1005,772),dict(clean=[(835,575,1000,715,'w',2)])),
+ ('apropos','valeur-confiance',(31,1080,262,1171)),('apropos','valeur-proximite',(276,1080,508,1171)),
+ ('apropos','valeur-qualite',(523,1080,755,1171)),('apropos','valeur-engagement',(769,1080,1001,1171)),
+ ('apropos','apropos-cta',(19,1188,1006,1327),dict(clean=[(55,1200,420,1315,'w',3)])),
+]
+_rc=[(20,206),(219,405),(418,608),(620,806),(819,1004)]
+_rr=[(566,662),(702,798)]
+_rn=['artisan','prestataire','plaisirs','immobilier','commercants','produits-locaux','medical','justice','b2b','automobile']
+for _i,_n in enumerate(_rn):
+    _x=_rc[_i%5]; _y=_rr[_i//5]
+    ASSETS.append(('recrutement','rec-'+_n,(_x[0],_y[0],_x[1],_y[1])))
+ASSETS+=[
+ ('recrutement','recrutement-hero',(0,44,1024,331),dict(fill=[(0,43,1024,46)],clean=[(58,70,515,265,'wb'),(885,75,1010,180,'w',2)])),
+ ('recrutement','recrutement-form',(21,1138,332,1355),dict(clean=[(200,1165,332,1250,'w',2)])),
+]
+ASSETS+=[
+ ('artisan','artisan-hero',(0,46,1024,352),dict(fill=[(0,44,1024,48)],clean=[(58,100,560,240,'wbo'),(58,312,905,340,'wo',2),(875,100,1000,250,'w',2)])),
+ ('artisan','art-plombier',(35,545,230,633)),('artisan','art-electricien',(248,545,443,633)),('artisan','art-macon',(460,545,653,633)),
+ ('artisan','art-peintre',(35,747,230,835)),('artisan','art-menuisier',(248,747,443,835)),('artisan','art-couvreur',(460,747,653,835)),
+ ('artisan','artisan-map',(680,522,989,708)),
+ ('artisan','artisan-cta',(0,1103,1024,1316),dict(clean=[(45,1125,250,1245,'w',2)])),
+]
+ASSETS+=[
+ ('compte','compte-hero',(0,46,1024,358),dict(fill=[(0,44,1024,48)],clean=[(55,62,470,279,'wb',3),(55,325,330,348,'w',2),(835,70,1000,185,'w',2)])),
+ ('compte','compte-laptop',(22,712,510,1002)),
+ ('compte','compte-avatar',(72,1082,158,1167)),
+ ('compte','compte-cta',(8,1233,1015,1348),dict(clean=[(45,1240,340,1340,'wb',3),(690,1302,975,1328,'w',2)])),
+]
+ASSETS+=[
+ ('offres','offres-hero',(0,46,1024,250),dict(fill=[(0,44,1024,48)],clean=[(58,70,515,240,'wb',3),(830,90,1000,190,'w',2)])),
+ ('offres','offres-equipe',(22,1139,303,1349),dict(clean=[(160,1165,290,1250,'w',2)])),
+]
+ASSETS+=[
+ ('contact','contact-hero',(0,46,1024,272),dict(fill=[(0,44,1024,48)],clean=[(58,70,580,245,'wb',3),(870,95,1005,185,'W',2)])),
+ ('contact','contact-equipe',(642,495,993,652),dict(clean=[(865,505,992,590,'W',2)])),
+ ('contact','contact-map',(502,1027,990,1231)),
+ ('contact','contact-cta',(13,1250,1011,1360),dict(clean=[(65,1255,345,1345,'wb',3)])),
+]
+ASSETS+=[
+ ('legal','legal-hero',(0,46,1024,267),dict(fill=[(0,44,1024,48)],clean=[(58,70,540,245,'wb',3),(855,95,1010,215,'W',2)])),
+ ('legal','legal-cta',(18,1207,414,1332)),
+]

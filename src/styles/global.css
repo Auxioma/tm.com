@@ -1,0 +1,244 @@
+/* ==========================================================================
+   TrouveMoi.com — design system (valeurs relevées sur les maquettes 1024px)
+   ========================================================================== */
+:root {
+  --tm-navy: #0b1a4a;          /* titres */
+  --tm-navy-2: #13235c;
+  --tm-blue: #0a6cf8;          /* bleu TrouveMoi (boutons, accents) */
+  --tm-blue-dark: #0659d6;
+  --tm-light-blue: #76c0ff;    /* accent des titres de hero */
+  --tm-logo-blue: #4fa3f3;
+  --tm-orange: #fa6a1a;
+  --tm-green: #43ac2f;
+  --tm-pink: #f3187f;
+  --tm-red: #f5294f;
+  --tm-purple: #7420f4;
+  --tm-yellow: #fbb304;
+  --tm-teal: #03b3c2;
+  --tm-brown: #864829;
+  --tm-bg-light: #f4f8fe;
+  --tm-bg-blue: #eaf3fd;
+  --tm-bg-cream: #fff8f3;
+  --tm-text: #3a4150;
+  --tm-text-soft: #555c68;
+  --tm-footer: #081d31;
+  --tm-border: #e3e9f3;
+
+  --container-width: 1024px;
+  --card-radius: 8px;
+  --button-radius: 999px;
+  --shadow: 0 1px 6px rgba(20, 45, 100, 0.08);
+  --shadow-md: 0 2px 12px rgba(20, 45, 100, 0.10);
+
+  --font-title: 'Nunito Sans', 'Segoe UI', sans-serif;
+  --font-body: 'Figtree', 'Segoe UI', sans-serif;
+  --font-hand: 'Kalam', cursive;
+}
+
+/* Le design est mesuré à 1024px : au-delà, la page entière est agrandie
+   proportionnellement (même rendu qu'une maquette), en dessous elle est
+   réduite jusqu'à la tablette, puis passe en mise en page mobile. */
+@media (min-width: 1100px) { html { zoom: 1.05; } }
+@media (min-width: 1200px) { html { zoom: 1.15; } }
+@media (min-width: 1300px) { html { zoom: 1.25; } }
+@media (min-width: 1400px) { html { zoom: 1.35; } }
+@media (min-width: 1500px) { html { zoom: 1.44; } }
+@media (min-width: 1600px) { html { zoom: 1.54; } }
+@media (min-width: 1700px) { html { zoom: 1.64; } }
+@media (min-width: 1800px) { html { zoom: 1.74; } }
+@media (min-width: 1900px) { html { zoom: 1.83; } }
+@media (min-width: 2100px) { html { zoom: 2; } }
+@media (min-width: 760px) and (max-width: 1023px) { html { zoom: 0.74; } }
+@media (min-width: 860px) and (max-width: 1023px) { html { zoom: 0.83; } }
+@media (min-width: 940px) and (max-width: 1023px) { html { zoom: 0.9; } }
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: var(--font-body);
+  color: var(--tm-text);
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  min-width: 0;
+  overflow-x: hidden;
+}
+@media (min-width: 760px) { body { min-width: 1024px; } }
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; border: 0; background: none; padding: 0; }
+h1, h2, h3, h4, p, ul { margin: 0; padding: 0; }
+ul { list-style: none; }
+
+.container { width: var(--container-width); max-width: 100%; margin: 0 auto; position: relative; }
+
+/* ---- Typo communes ---------------------------------------------------- */
+.eyebrow {
+  font-family: var(--font-title);
+  font-weight: 800;
+  font-size: 10.5px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  color: var(--tm-blue);
+  line-height: 1;
+}
+.h2 {
+  font-family: var(--font-title);
+  font-weight: 800;
+  color: var(--tm-navy);
+  font-size: 25px;
+  line-height: 1.1;
+  letter-spacing: -0.4px;
+}
+.h2 em, .hl { font-style: normal; color: var(--tm-blue); }
+.lead { font-size: 11.5px; line-height: 14.5px; color: var(--tm-text); }
+.center { text-align: center; }
+
+/* ---- Hero (commun) ---------------------------------------------------- */
+.hero {
+  position: relative;
+  background-color: #1d2a3a;
+  background-size: cover;
+  background-position: center top;
+  color: #fff;
+  overflow: hidden;
+}
+.hero .container { height: 100%; }
+.hero-eyebrow {
+  font-family: var(--font-title);
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 1.9px;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 1;
+}
+.hero-title {
+  font-family: var(--font-title);
+  font-weight: 800;
+  font-size: 41px;
+  line-height: 41px;
+  letter-spacing: -0.6px;
+  color: #fff;
+}
+.hero-title em { font-style: normal; color: var(--tm-light-blue); }
+.hero-text { font-size: 15px; line-height: 19px; color: #fff; font-weight: 400; }
+.hand {
+  position: absolute;
+  font-family: var(--font-hand);
+  font-weight: 700;
+  color: #fff;
+  font-size: 19px;
+  line-height: 25px;
+  transform-origin: left top;
+  white-space: nowrap;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, .25);
+}
+.hand::after {
+  content: '';
+  display: block;
+  height: 3px;
+  border-radius: 3px;
+  background: #fff;
+  width: var(--hw, 80px);
+  margin: var(--hm, 4px 0 0 40px);
+  transform: rotate(var(--hr, -8deg));
+  transform-origin: left center;
+}
+.hand.noline::after { display: none; }
+
+/* ---- Boutons ------------------------------------------------------------ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: var(--button-radius);
+  font-family: var(--font-title);
+  font-weight: 800;
+  white-space: nowrap;
+  transition: filter .15s, background-color .15s;
+}
+.btn:hover { filter: brightness(1.07); }
+.btn-blue { background: var(--tm-blue); color: #fff; }
+.btn-orange { background: var(--tm-orange); color: #fff; }
+.btn-white { background: #fff; color: var(--tm-navy); }
+.btn-outline { background: #fff; color: var(--tm-blue); border: 1px solid #b9d3f7; }
+
+/* ---- Cartes --------------------------------------------------------------- */
+.card {
+  background: #fff;
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow);
+}
+
+.icon-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+  flex: none;
+}
+
+/* ---- Formulaires ----------------------------------------------------------- */
+.field label { display: block; font-size: 9px; font-weight: 600; color: var(--tm-navy); margin-bottom: 4px; }
+.field label .req { color: #e5322d; margin-left: 2px; }
+.input {
+  width: 100%;
+  height: 23px;
+  border: 1px solid #dfe4ec;
+  border-radius: 4px;
+  background: #fff;
+  font-size: 8px;
+  padding: 0 8px;
+  color: var(--tm-text);
+  outline: none;
+}
+.input::placeholder { color: #9aa1ac; }
+.input:focus { border-color: var(--tm-blue); }
+select.input { appearance: none; background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5' viewBox='0 0 8 5'%3E%3Cpath d='M1 1l3 3 3-3' stroke='%23333' stroke-width='1.2' fill='none'/%3E%3C/svg%3E") no-repeat right 9px center; }
+
+/* ---- FAQ ------------------------------------------------------------------ */
+.faq-item {
+  border: 1px solid #e1e7f0;
+  border-radius: 5px;
+  background: #fff;
+}
+.faq-q {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  color: var(--tm-navy);
+}
+.faq-q .plus { font-size: 15px; font-weight: 400; color: #333; line-height: 1; }
+.faq-a { color: var(--tm-text-soft); }
+
+/* ==========================================================================
+   Mobile (< 760px) : on conserve la hiérarchie, les grilles passent en colonne
+   ========================================================================== */
+@media (max-width: 759px) {
+  .container { width: 100%; padding: 0 16px; }
+  .hero-title { font-size: 32px; line-height: 34px; }
+  .hand { display: none; }
+  .h2 { font-size: 22px; }
+  .m-stack { display: flex !important; flex-direction: column !important; gap: 12px !important; }
+  .m-grid2 { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 10px !important; }
+  .m-hide { display: none !important; }
+  .m-full { width: 100% !important; max-width: 100% !important; position: static !important; }
+}
+
+/* ---- Bouton lecture ------------------------------------------------------ */
+.play-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: rgba(15, 20, 30, .35);
+  cursor: pointer;
+}
+.play-btn svg { margin-left: 8%; }

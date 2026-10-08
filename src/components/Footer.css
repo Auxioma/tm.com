@@ -1,0 +1,55 @@
+.site-footer {
+  background: #061e33;
+  color: #fff;
+  font-size: 9.8px;
+}
+.footer-top { position: relative; height: 132px; }
+.footer-brand { position: absolute; left: 50px; top: 10px; }
+.logo-footer .logo-name { color: #fff; font-size: 20.5px; }
+.logo-footer .logo-name b { color: #5fb2f5; }
+.logo-footer .logo-txt { margin-left: 7px; margin-top: 6px; }
+.logo-footer .logo-tag { color: #d9e2ee; font-size: 8.1px; margin-top: 3px; margin-left: 1px; }
+.footer-desc { margin-top: 11px; font-size: 9.8px; line-height: 14px; color: #e6ebf2; }
+.footer-socials { display: flex; gap: 14px; margin-top: 15px; }
+.footer-socials a { font-size: 18px; width: 18px; display: flex; justify-content: center; color: #fff; }
+.footer-socials a:hover { color: #5fb2f5; }
+
+.footer-col { position: absolute; top: 20px; }
+.footer-col-1 { left: 302px; }
+.footer-col-2 { left: 466px; }
+.footer-col-3 { left: 635px; }
+.footer-col h4 { font-size: 10.6px; font-weight: 700; margin-bottom: 6px; line-height: 12px; }
+.footer-col li { line-height: 16px; font-size: 10.6px; color: #e6ebf2; white-space: nowrap; }
+.footer-col a:hover { color: #5fb2f5; }
+
+.footer-france {
+  position: absolute;
+  left: 792px;
+  top: 13px;
+  height: 115px;
+  border-left: 1px solid #3b4f66;
+  display: flex;
+  align-items: center;
+  padding-left: 6px;
+}
+.footer-france img { width: 94px; height: 100px; }
+.footer-france p { margin-left: 8px; font-size: 11px; line-height: 14px; color: #fff; margin-top: -2px; }
+
+.footer-bottom { border-top: 1px solid #1d3550; height: 44px; }
+.footer-bottom .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px 4px 50px;
+  font-size: 10.9px;
+  color: #dfe5ee;
+}
+
+@media (max-width: 759px) {
+  .footer-top { height: auto; display: flex; flex-direction: column; gap: 18px; padding: 24px 16px; }
+  .footer-brand, .footer-col, .footer-france { position: static; }
+  .footer-france { border-left: 0; padding-left: 0; }
+  .footer-bottom { height: auto; }
+  .footer-bottom .container { flex-direction: column; gap: 6px; padding: 12px 16px; }
+}
